@@ -1,0 +1,222 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+
+/**************** nav *************/
+.color-frontpage #sidebar {
+    background-color: rgba(226, 36, 0, 0.9);
+}
+
+.color-frontpage span {
+    background-color: #ffffff;
+}
+
+
+
+.color-frontpage {
+    /* background-color: #E22400; */
+
+}
+
+#sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    left: -300px;
+    transition: .4s;
+    z-index: 1;
+    /* Add a higher z-index to make the text overlay above the menu */
+
+}
+
+#sidebar ul li {
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 26px 24px;
+    margin-bottom: 1.2rem;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    top: 30px;
+    left: 330px;
+}
+
+.toggle-btn span {
+    width: 45px;
+    height: 4px;
+    background: rgb(0, 0, 0);
+    display: block;
+    margin-top: 4px;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+
+
+/* --------Links style------ */
+.link-style {
+    background-image: linear-gradient(to right,
+            #ffffff,
+            #ffffff 50%,
+            #000000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Open Sans', sans-serif;
+
+    font-weight: 400;
+    font-size: x-large
+}
+
+.link-style:before {
+    content: '';
+    background: #FF9058;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.link-style:hover {
+    background-position: 0;
+}
+
+.link-style:hover::before {
+    width: 100%;
+}
+
+
+/* nav content */
+#nav-content {
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* background-color: #BA6A42; */
+
+}
+
+
+
+/* nav logo image */
+#logo-image {
+
+    margin: 0 auto;
+
+}
+
+#logo-image img {
+    display: block;
+    width: 13rem;
+    height: 100%;
+    /* box-shadow: 15px 10px 10px 0px rgba(0, 0, 0, 0.25); */
+
+}
+
+/* login button */
+#login-box {
+    margin: 10px 10px;
+    width: 100px;
+    height: 37px;
+    background: #FF9058;
+    border-radius: 5px;
+    border: 1px solid #BA6A42;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+#login-box p {
+    text-align: center;
+}
+
+/* empty box to devide equally */
+#empty-box {
+
+    width: 10rem;
+    /* background-color: #be3939; */
+}
+
+
+
+/* image and button */
+.container-frontpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh;  */
+    /* Adjust as needed */
+}
+
+.image {
+    margin-right: 20px;
+    /* Adjust the spacing between the image and button */
+    /* width: 50vw;
+    height: 100%; */
+}
+
+.container-frontpage img {
+    width: 30vw;
+    height: 100%;
+}
+
+.text-button {
+    /* padding: 0; */
+    width: 10em;
+    height: 2.2em;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.3125rem;
+    border: 3px solid #981800;
+    background: #E22400;
+    box-shadow: 15px 10px 10px 3px rgba(0, 0, 0, 0.50);
+
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    font-family: Kavivanar;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+
+}
+
+/* ------wave image on the background----- */
+.bottom-left{
+    position: fixed;
+    width: 40rem; /* Adjust the width of the image */
+    height: 20rem; /* Adjust the height of the image */
+    background-image: url('images/wave-bottom-left.png'); /* Replace with your image path */
+    background-size: cover;
+    z-index: -10; /* Set z-index to move the image behind other content */
+    bottom: 0;
+    left: 0;
+  }
+.top-right{
+    position: fixed;
+    width: 10rem; /* Adjust the width of the image */
+    height: 20rem; /* Adjust the height of the image */
+    background-image: url('images/wave-right\ side.png'); /* Replace with your image path */
+    background-size: cover;
+    z-index: -10; /* Set z-index to move the image behind other content */
+    top: 0;
+    right: 0;   
+    transform: rotate(-2deg);
+  }
+
