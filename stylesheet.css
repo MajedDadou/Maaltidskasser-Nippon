@@ -189,7 +189,7 @@ body {
     text-align: center;
     text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
     font-family: Kavivanar;
-    font-size: 2em;
+    font-size: 2.2em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -202,7 +202,7 @@ body {
     position: fixed;
     width: 40rem; /* Adjust the width of the image */
     height: 20rem; /* Adjust the height of the image */
-    background-image: url('images/wave-bottom-left.png'); /* Replace with your image path */
+    background-image: url('images/wave-bottom.png'); /* Replace with your image path */
     background-size: cover;
     z-index: -10; /* Set z-index to move the image behind other content */
     bottom: 0;
@@ -212,11 +212,11 @@ body {
     position: fixed;
     width: 10rem; /* Adjust the width of the image */
     height: 20rem; /* Adjust the height of the image */
-    background-image: url('images/wave-right\ side.png'); /* Replace with your image path */
+    background-image: url('images/wave-top-right.png'); /* Replace with your image path */
     background-size: cover;
     z-index: -10; /* Set z-index to move the image behind other content */
     top: 0;
     right: 0;   
-    transform: rotate(-2deg);
+    /* transform: rotate(0deg); */
   }
 
