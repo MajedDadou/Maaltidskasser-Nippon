@@ -200,23 +200,56 @@ body {
 /* ------wave image on the background----- */
 .bottom-left{
     position: fixed;
-    width: 40rem; /* Adjust the width of the image */
-    height: 20rem; /* Adjust the height of the image */
-    background-image: url('images/wave-bottom.png'); /* Replace with your image path */
+    width: 40rem;
+    height: 20rem; 
+    background-image: url('images/wave-bottom.png'); 
     background-size: cover;
-    z-index: -10; /* Set z-index to move the image behind other content */
+    z-index: -10;
     bottom: 0;
     left: 0;
   }
 .top-right{
     position: fixed;
-    width: 10rem; /* Adjust the width of the image */
-    height: 20rem; /* Adjust the height of the image */
-    background-image: url('images/wave-top-right.png'); /* Replace with your image path */
+    width: 10rem; 
+    height: 20rem; 
+    background-image: url('images/wave-top-right.png'); 
     background-size: cover;
-    z-index: -10; /* Set z-index to move the image behind other content */
+    z-index: -10; 
     top: 0;
     right: 0;   
     /* transform: rotate(0deg); */
   }
 
+/* ------food-gallery-------- */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .grid-item {
+    text-align: center;
+    width: 20%; /* Adjust the width as needed */
+    margin: 60px; /* Adjust the margin as needed */
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.9);
+
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF9058;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .grid h3,pre{
+
+  }
