@@ -134,19 +134,29 @@ body {
 }
 
 /* login button */
-#login-box {
+.login {
+    display: inline-block;
+
     margin: 10px 10px;
     width: 100px;
     height: 37px;
     background: #FF9058;
     border-radius: 5px;
-    border: 1px solid #BA6A42;
+    border: 2px solid #000000;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
 
 }
 
-#login-box p {
-    text-align: center;
+
+.login a {
+color: #000;
+font-family: Inter;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration: none;
+
 }
 
 /* empty box to devide equally */
@@ -212,6 +222,22 @@ body {
     z-index: -10;
     bottom: 0;
     left: 0;
+        transform: rotate(0deg);
+        
+
+
+}
+.bottom-left-info {
+    position: fixed;
+    width: 10rem;
+    height: 15rem;
+    background-image: url('images/small\ image\ bottom\ left.png');
+    background-size: cover;
+    z-index: -10;
+    bottom: 0;
+    left: 0;
+        transform: rotate(0deg);
+
 }
 
 .top-right {
@@ -260,9 +286,17 @@ body {
     margin-top: 10px;
 }
 
-.grid h3,
-pre {}
+.button a{
+    color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 1.25rem;
+font-style: normal;
+/* font-weight: 400; */
+line-height: normal;
+text-decoration: none;
 
+}
 
 
 
@@ -340,3 +374,55 @@ body {
 }
 
 /* // For decoration only */
+
+
+
+/* Recipe box pages */
+.section {
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 20px;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.left img, .right img {
+    max-width: 70%;
+    height: auto;
+    box-shadow: 5px 5px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+.section h2 {
+    color: #000;
+font-family: Kavivanar;
+font-size: 1.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    /* font-size: 24px; */
+    margin-bottom: 10px;
+}
+.section p{
+    color: #000;
+font-family: Kavivanar;
+font-size: 0.9375rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.container {
+    padding: 0 10em; /* Adjust the padding as needed */
+}
+
+/* button for the page */
+.button-container{
+    display: flex;
+    padding: 0 10em; /* Adjust the padding as needed */
+
+}
+.button-container .button{
+margin: 10px;
+}
