@@ -115,7 +115,12 @@ body {
 
 /* nav logo image */
 #logo-image {
-
+    color: #000;
+    font-family: Kavivanar;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     margin: 0 auto;
 
 }
@@ -198,50 +203,54 @@ body {
 }
 
 /* ------wave image on the background----- */
-.bottom-left{
+.bottom-left {
     position: fixed;
     width: 40rem;
-    height: 20rem; 
-    background-image: url('images/wave-bottom.png'); 
+    height: 20rem;
+    background-image: url('images/wave-bottom.png');
     background-size: cover;
     z-index: -10;
     bottom: 0;
     left: 0;
-  }
-.top-right{
+}
+
+.top-right {
     position: fixed;
-    width: 10rem; 
-    height: 20rem; 
-    background-image: url('images/wave-top-right.png'); 
+    width: 10rem;
+    height: 20rem;
+    background-image: url('images/wave-top-right.png');
     background-size: cover;
-    z-index: -10; 
+    z-index: -10;
     top: 0;
-    right: 0;   
+    right: 0;
     /* transform: rotate(0deg); */
-  }
+}
 
 /* ------food-gallery-------- */
 .grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-  }
-  
-  .grid-item {
+}
+
+.grid-item {
+
     text-align: center;
-    width: 20%; /* Adjust the width as needed */
-    margin: 60px; /* Adjust the margin as needed */
+    width: 20%;
+    /* Adjust the width as needed */
+    margin: 60px;
+    /* Adjust the margin as needed */
     box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: rgba(255, 255, 255, 0.9);
 
-  }
-  
-  .grid-item img {
+}
+
+.grid-item img {
     max-width: 100%;
     /* box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.9); */
-  }
-  
-  .button {
+}
+
+.button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #FF9058;
@@ -249,75 +258,85 @@ body {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
-  }
-  .grid h3,pre{
+}
 
-  }
-
-
+.grid h3,
+pre {}
 
 
 
 
 
-  /* --------filter------- */
- /*  Needed for filters */
 
-.hide { /* You can play with the seconds to change the "animation" */
-    animation: hide 0s ease 0s 1 normal forwards;
+
+/* --------filter------- */
+/*  Needed for filters */
+
+.hide {
+    /* You can play with the seconds to change the "animation" */
+    animation: hide .3s ease 0s 1 normal forwards;
     transform-origin: center;
-  }
-  .show { /* You can play with the seconds to change the "animation" */
-      animation: show 0.2s ease 0s 1 normal forwards;    
-      transform-origin: center;
-  }
-  
-  @keyframes hide {
-    0%{
-      transform: scale(0);        
+}
+
+.show {
+    /* You can play with the seconds to change the "animation" */
+    animation: show .3s ease 0s 1 normal forwards;
+    transform-origin: center;
+}
+
+@keyframes hide {
+    0% {
+        transform: scale(0);
     }
+
     100% {
-      transform: scale(0);        
-      width: 0;
-      height: 0;
-      margin: 0;
+        transform: scale(0);
+        width: 0;
+        height: 0;
+        margin: 0;
     }
-  }
-  @keyframes show {
-    0%{
-      transform: scale(0);     
-      width: 0;
-      height: 0;
-      margin: 0;   
+}
+
+@keyframes show {
+    0% {
+        transform: scale(0);
+        width: 0;
+        height: 0;
+        margin: 0;
     }
+
     100% {
-      transform: scale(1);    
+        transform: scale(1);
     }
-  }
-  /*  // Needed for filters */
-  
-  /* For decoration only */
-  body {
+}
+
+/*  // Needed for filters */
+
+/* For decoration only */
+body {
     font-family: sans-serif;
-  }
-  .projects {
+}
+
+.projects {
     display: flex;
     /* background: gray; */
     justify-content: center;
     align-items: center;
     min-height: 200px;
-  }
+}
 
-  .filters {
+.filters {
     margin: 20px;
     display: flex;
     justify-content: center;
-  }
-  .filter {
+}
+
+.filter {
     margin: 20px;
-  }
-  .filter:hover {
+}
+
+.filter:hover {
     cursor: pointer;
-  }
-  
-  /* // For decoration only */
+}
+
+/* // For decoration only */
