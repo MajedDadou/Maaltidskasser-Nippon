@@ -36,3 +36,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+// pop up menu
+document.addEventListener('DOMContentLoaded', function() {
+    const openButtons = document.querySelectorAll('.open-popup');
+    const popupContainer = document.querySelector('.popup-container');
+    const closePopup = document.querySelector('.close-popup');
+
+    openButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            popupContainer.style.display = 'flex';
+        });
+    });
+
+    closePopup.addEventListener('click', function() {
+        popupContainer.style.display = 'none';
+    });
+});
+
+
