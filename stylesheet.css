@@ -3,7 +3,8 @@ body {
     margin: 0;
     background-color: #ffffff;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -151,13 +152,13 @@ a{
 
 
 .login a {
-color: #000;
-font-family: Inter;
-font-size: 1.125rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-decoration: none;
+    color: #000;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
 
 }
 
@@ -224,11 +225,12 @@ text-decoration: none;
     z-index: -10;
     bottom: 0;
     left: 0;
-        transform: rotate(0deg);
-        
+    transform: rotate(0deg);
+
 
 
 }
+
 .bottom-left-info {
     position: fixed;
     width: 10rem;
@@ -238,7 +240,7 @@ text-decoration: none;
     z-index: -10;
     bottom: 0;
     left: 0;
-        transform: rotate(0deg);
+    transform: rotate(0deg);
 
 }
 
@@ -261,8 +263,14 @@ text-decoration: none;
     justify-content: space-around;
 }
 
-.grid-item {
+.grid-item pre {
+    font-family: kavivanar;
+    font-weight: normal;
+}
 
+.grid-item {
+    font-weight: bolder;
+    font-family: Kavivanar;
     text-align: center;
     width: 25%;
     /* Adjust the width as needed */
@@ -277,13 +285,16 @@ text-decoration: none;
     max-width: 100%;
     /* box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.9); */
 }
-.difficulty{
+
+.difficulty {
     width: 2rem;
 
 }
-.grid-item .button{
+
+.grid-item .button {
     margin: 2em;
 }
+
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -294,15 +305,15 @@ text-decoration: none;
     margin-top: 10px;
 }
 
-.button a{
+.button a {
     color: #FFF;
-text-align: center;
-font-family: Inter;
-font-size: 1.25rem;
-font-style: normal;
-/* font-weight: 400; */
-line-height: normal;
-text-decoration: none;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    /* font-weight: 400; */
+    line-height: normal;
+    text-decoration: none;
 
 }
 
@@ -393,11 +404,13 @@ body {
     margin-bottom: 20px;
 }
 
-.left, .right {
+.left,
+.right {
     flex: 1;
 }
 
-.left img, .right img {
+.left img,
+.right img {
     max-width: 70%;
     height: auto;
     box-shadow: 5px 5px 4px 1px rgba(0, 0, 0, 0.25);
@@ -405,34 +418,39 @@ body {
 
 .section h2 {
     color: #000;
-font-family: Kavivanar;
-font-size: 1.875rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Kavivanar;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     /* font-size: 24px; */
     margin-bottom: 10px;
 }
-.section p{
+
+.section p {
     color: #000;
-font-family: Kavivanar;
-font-size: 0.9375rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Kavivanar;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
+
 .container {
-    padding: 0 10em; /* Adjust the padding as needed */
+    padding: 0 10em;
+    /* Adjust the padding as needed */
 }
 
 /* button for the page */
-.button-container{
+.button-container {
     display: flex;
-    padding: 0 10em; /* Adjust the padding as needed */
+    padding: 0 10em;
+    /* Adjust the padding as needed */
 
 }
-.button-container .button{
-margin: 10px;
+
+.button-container .button {
+    margin: 10px;
 }
 
 
@@ -479,3 +497,40 @@ margin: 10px;
     justify-content: space-around;
 }
 
+#cart p {
+    margin-right: 7em;
+    margin-left: 1em;
+    font-family: Kavivanar;
+    font-weight: bolder;
+
+}
+
+#cart img {
+    margin-top: 5em;
+    width: 3rem;
+    margin-right: 7em;
+
+
+}
+
+#cart-page {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    /* Set the height to fill the viewport */
+}
+
+#cart-page p {
+    /* margin-right: 7em; */
+    /* text-align: center; */
+    font-family: Kavivanar;
+    font-weight: bolder;
+}
+
+#cart-page img {
+
+    width: 4rem;
+}
