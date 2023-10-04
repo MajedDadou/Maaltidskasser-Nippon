@@ -539,13 +539,13 @@ body {
 
 
 /* cart-items check-out pages */
-.cart-content-holder .button{
+.cart-content-holder .button {
     /* display: flex;
     flex-wrap: wrap; */
     /* width: 100%; */
-/* align-items: center; */
-/* align-content: center; */
-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    /* align-items: center; */
+    /* align-content: center; */
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
 
 }
 
@@ -584,16 +584,19 @@ box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
 
 
 }
-.continue-button{
+
+.continue-button {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.continue-button .button{
+
+.continue-button .button {
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 1);
 
 }
-.cart-line{
+
+.cart-line {
     margin-top: 2em;
     margin-bottom: 2em;
     border: 0;
@@ -603,107 +606,78 @@ box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
 
 
 
-
-
-
-
-
-
-
-
-
-/* factura form */
-
-/* .factura-form {
-    max-width: 400px;
-    padding: 20px;
-    background-color: rgba(153, 28, 28, 0.1);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-    margin-bottom: 10px;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-input, select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-button:hover {
-    background-color: #000000;
-} */
-
-
-
-
 .row {
     box-sizing: border-box;
 
     font-size: 17px;
     padding: 8px;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     flex-wrap: wrap;
     /* margin: 0 -16px;  */
-  }
-  
-  .col-25 {
-    -ms-flex: 25%; 
+}
+
+.col-25 {
+    -ms-flex: 25%;
     flex: 25%;
-  }
-  
-  /* .col-50 {
+}
+
+/* .col-50 {
     -ms-flex: 50%; 
     flex: 50%;
   } */
-  
-  /* .col-75 {
+
+/* .col-75 {
     -ms-flex: 75%; 
     flex: 75%;
   } */
-  
-  .col-25,
-  .col-50,
-  .col-75 {
+
+.col-25,
+.col-50,
+.col-75 {
     padding: 0 16px;
-  }
-  
-  .container {
-    background-color: #f2f2f2;
+}
+
+.container {
+    background-color: #ffffff;
     padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-  }
-  
-  input[type=text] {
+    border: 2px solid lightgrey;
+    border-radius: 1em;
+}
+
+.right {
+    background-color: #ff9058;
+    border: none;
+    border-radius: 1em;
+}
+
+.container img {
+    width: 5em;
+    margin-right: 1em;
+
+
+}
+
+input[type=text] {
     width: 100%;
     margin-bottom: 20px;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 3px;
-  }
-  
-  label {
+}
+
+label {
     margin-bottom: 10px;
     display: block;
-  }
-  
-  .icon-container {
+}
+
+.icon-container {
     margin-bottom: 20px;
     padding: 7px 0;
     font-size: 24px;
-  }
-  
-  .btn {
+}
+
+.btn {
     background-color: #FF9058;
     color: rgb(0, 0, 0);
     padding: 12px;
@@ -713,34 +687,110 @@ button:hover {
     border-radius: 3px;
     cursor: pointer;
     font-size: 17px;
-  }
-  
-  .btn:hover {
-    background-color: #fc7734;
-  }
-  
-  a {
-    color: #2196F3;
-  }
-  
 
-  span.price {
+
+}
+
+.btn:hover {
+    background-color: #fc7734;
+
+}
+
+.right a {
+    color: #ffffff;
+    /* text-decoration: underline; */
+}
+
+
+
+span.price {
     float: right;
     /* color: grey; */
-  }
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
-  @media (max-width: 800px) {
+}
+
+/* (change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
     .row {
-      flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
+
     .col-25 {
-      margin-bottom: 20px;
+        margin-bottom: 20px;
     }
-  }
+}
+
+
+/* signup pages */
+
+/* sign up page 1 */
+
+.body {
+    font-family: Arial, sans-serif;
+    font-size: larger;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    /* background-color: #f2f2f2; */
+}
+
+.form-container {
+
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    max-width: 40vw;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+
+}
+
+.form-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 0.3em;
+    outline: none;
+    border: 2px solid black;
+    font-size: large;
+
+}
+
+.form-group i {
+    margin-right: 10px;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    font-size: large;
+
+}
+
+.form-group .half-width {
+    /* width: calc(50% - 10px); */
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+.form-group .full-width {
+    width: 100%;
+}
+
+
+
+/* popup page when going through sign up */
+
+
+
 /* -------Footer------- */
-
-
-
-
-
