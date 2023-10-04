@@ -1,82 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kavivanar&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <script src="app.js"></script>
-    <link rel="icon" type="image/x-icon" href="/images/Logo transparent.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kavivanar&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="app.js"></script>
+  <link rel="icon" type="image/x-icon" href="/images/Logo transparent.png">
 
 
-    
-    <title>Faktura</title>
+
+  <title>Faktura</title>
 </head>
+
 <body>
-     <!-- corner wave image -->
-    <!-- <div class="corner-image bottom-left"></div> -->
-    <div class="corner-image top-right"></div>
+  <!-- corner wave image -->
+  <!-- <div class="corner-image bottom-left"></div> -->
+  <div class="corner-image top-right"></div>
 
 
-    <!-- -------navigation----- -->
-    <nav class="color-frontpage">
-        <div id="sidebar">
-            <div class="toggle-btn" onclick="show()">
-                <span></span>
-                <span></span>
-                <span></span>
+  <!-- -------navigation----- -->
+  <nav class="color-frontpage">
+    <div id="sidebar">
+      <div class="toggle-btn" onclick="show()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul>
+        <li><a class="link-style" href="index.html">Home</a></li>
+        <li><a class="link-style" href="Måltidskasser.html">Måltidskasser</a></li>
+        <li><a class="link-style" href="test3.html">test3</a></li>
+        <li><a class="link-style" href="test4.html">test4</a></li>
+      </ul>
+    </div>
+    <!-- div for the rest of nav content -->
+    <div id="nav-content">
+      <div id="empty-box"></div>
+      <!-- image -->
+      <div id="logo-image">
+        <a href="index.html"><img src="images/Logo transparent 1.png" alt="Logo"></a>
+
+        <!-- login button to the right -->
+      </div>
+      <button class="login"><a href="link1.html">login</a></button>
+
+    </div>
+  </nav>
+
+  <div class="button-container">
+    <button class="button"><a href="cart.html">Tilbage</a></button>
+  </div>
+
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form action="/action_page.php">
+
+          <div class="row">
+            <div class="col-50">
+              <h3>Betalingsadresse</h3>
+              <label for="fname"><i class="fa fa-user"></i> fuld Navn</label>
+              <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="john@example.com">
+              <label for="adr"><i class="fa fa-address-card-o"></i> Adress</label>
+              <input type="text" id="adr" name="address" placeholder="Vestergade 1 2 st">
+              <label for="city"><i class="fa fa-institution"></i> By</label>
+              <input type="text" id="city" name="city" placeholder="Herning">
+
+              <div class="row">
+                <div class="col-50">
+                  <label for="zip">Postnummer</label>
+                  <input type="text" id="zip" name="zip" placeholder="1234">
+                </div>
+              </div>
             </div>
-            <ul>
-                <li><a class="link-style" href="index.html">Home</a></li>
-                <li><a class="link-style" href="Måltidskasser.html">Måltidskasser</a></li>
-                <li><a class="link-style" href="test3.html">test3</a></li>
-                <li><a class="link-style" href="test4.html">test4</a></li>
-            </ul>
-        </div>
-        <!-- div for the rest of nav content -->
-        <div id="nav-content">
-            <div id="empty-box"></div>
-            <!-- image -->
-            <div id="logo-image">
-                <a href="index.html"><img src="images/Logo transparent 1.png" alt="Logo"></a>
 
-                <!-- login button to the right -->
+            <div class="col-50">
+              <h3>Betaling</h3>
+              <label for="fname">betalingsmetode</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Navn på kort</label>
+              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+              <label for="ccnum">Kort nummer</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Udløbs Måned</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="September">
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Udløb År</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2018">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352">
+                </div>
+              </div>
             </div>
-            <button class="login"><a href="link1.html">login</a></button>
 
-        </div>
-    </nav>
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <input type="submit" value="Continue to checkout" class="btn">
+        </form>
+      </div>
+    </div>
+    <div class="col-25">
+      <div class="container">
 
-    <form class="factura-form">
-        <div class="form-group">
-            <label for="name">First Name/Last Name:</label>
-            <input type="text" id="name" name="name">
+
+        <label for="payment-method">Vælg betalingsmetode:</label>
+        <br>
+        <label for="one-time">Engangsbetaling</label>
+        <input type="radio" id="one-time" name="payment-method" value="one-time">
+        <label for="monthly">Månedlig betaling</label>
+        <input type="radio" id="monthly" name="payment-method" value="monthly">
+
+        <div id="price-info">
+          <p>Rabat <span id="price">20%</span></p>
         </div>
-        <div class="form-group">
-            <label for="country">Choose Land/Region:</label>
-            <select id="country" name="country">
-                <!-- Add options for countries/regions here -->
-                <option value="country1">Denmark</option>
-                <option value="country2">Germany</option>
-                <option value="country3">Sweden</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="postnumber">Postnumber or City:</label>
-            <input type="text" id="postnumber" name="postnumber">
-        </div>
-        <div class="form-group">
-            <label for="contact">Telefon:</label>
-            <input type="text" id="contact" name="contact">
-        </div>
-        <div class="form-group">
-            <label for="E-mail">E-mail:</label>
-            <input type="text" id="email" name="email">
-        </div>
-        <button type="submit">Submit</button>
-    </form>
+        <h4>Kurv <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>2</b></span></h4>
+        <p><a href="#">Product 1</a> <span class="price">80 DKK</span></p>
+        <p><a href="#">Product 2</a> <span class="price">120 DKK</span></p>
+
+        <hr class="cart-line">
+        <p class="total-price">Total <span class="price"><b>200 DKK</b></span></p>
+      </div>
+    </div>
+  </div>
+
 
 </body>
+
 </html>
