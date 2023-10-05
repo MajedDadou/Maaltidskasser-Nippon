@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,40 +13,79 @@
 
     <title>Velkommen til Nippon</title>
 </head>
+
 <body>
-     <!-- corner wave image -->
-     <div class="corner-image bottom-left"></div>
-     <div class="corner-image top-right"></div>
- 
- 
-     <!-- -------navigation----- -->
-     <nav class="color-frontpage">
-         <div id="sidebar">
-             <div class="toggle-btn" onclick="show()">
-                 <span></span>
-                 <span></span>
-                 <span></span>
-             </div>
-             <ul>
-                 <li><a class="link-style" href="index.html">Home</a></li>
-                 <li><a class="link-style" href="Måltidskasser.html">Måltidskasser</a></li>
-                 <li><a class="link-style" href="test3.html">test3</a></li>
-                 <li><a class="link-style" href="test4.html">test4</a></li>
-             </ul>
-         </div>
-         <!-- div for the rest of nav content -->
-         <div id="nav-content">
-             <div id="empty-box"></div>
-             <!-- image -->
-             <div id="logo-image">
-                 <a href="index.html"><img src="images/Logo transparent 1.png" alt="Logo"></a>
- 
-                 <!-- login button to the right -->
-             </div>
-             <button class="login"><a href="login.html">login</a></button>
- 
-         </div>
-     </nav>
- 
+    <!-- corner wave image -->
+    <div class="corner-image bottom-left"></div>
+    <div class="corner-image top-right"></div>
+
+
+    <!-- -------navigation----- -->
+    <nav class="color-frontpage">
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="show()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a class="link-style" href="index.html">Home</a></li>
+                <li><a class="link-style" href="Måltidskasser.html">Måltidskasser</a></li>
+                <li><a class="link-style" href="test3.html">test3</a></li>
+                <li><a class="link-style" href="test4.html">test4</a></li>
+            </ul>
+        </div>
+        <!-- div for the rest of nav content -->
+        <div id="nav-content">
+            <div id="empty-box"></div>
+            <!-- image -->
+            <div id="logo-image">
+                <a href="index.html"><img src="images/Logo transparent 1.png" alt="Logo"></a>
+
+                <!-- login button to the right -->
+            </div>
+            <button class="login"><a href="login.html">login</a></button>
+
+        </div>
+    </nav>
+
+
+
+    <div class="steps-container">
+        <p>Trin 1/3</p>
+        <div class="input-group">
+            <label for="adults">Hvor mange forældre er I i husholdningen?</label>
+            <select id="adults" name="adults">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+        
+        <div class="input-group">
+            <label for="children">Hvor mange børn er I i husholdningen?</label>
+            <select id="children" name="children">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+
+        <div class="continue-button">
+            <a href="login-2.html" class="button">Fortsæt</a>
+        </div>
+    </div>
+
+
+
+
+
 </body>
+
 </html>
