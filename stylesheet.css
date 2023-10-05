@@ -382,6 +382,12 @@ body {
     margin: 20px;
     display: flex;
     justify-content: center;
+    color: #000;
+    font-family: Inter;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
 }
 
 .filter {
@@ -437,7 +443,7 @@ body {
 }
 
 .container {
-    padding: 0 10em;
+    padding: 0 30px;
     /* Adjust the padding as needed */
 }
 
@@ -450,7 +456,7 @@ body {
 }
 
 .button-container .button {
-    margin: 10px;
+    margin: 0 10px 100px 10px;
 }
 
 
@@ -638,20 +644,20 @@ body {
     padding: 0 16px;
 }
 
-.container {
+.row .container {
     background-color: #ffffff;
     padding: 5px 20px 15px 20px;
     border: 2px solid lightgrey;
     border-radius: 1em;
 }
 
-.right {
+.row .right {
     background-color: #ff9058;
     border: none;
     border-radius: 1em;
 }
 
-.container img {
+.row .container img {
     width: 5em;
     margin-right: 1em;
 
@@ -854,3 +860,89 @@ span.price {
 
 
 /* -------Footer------- */
+
+
+/* responsiv */
+@media only screen and (max-width: 700px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .section .left,
+      .section .right {
+        width: 100%;
+        text-align: center;
+      }
+    
+      .section .right img {
+        max-width: 100%;
+        height: auto;
+      }
+    
+      .button-container {
+        text-align: center;
+      }
+
+
+
+    .filters{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container-frontpage {
+        flex-direction: column;
+        /* Stack items vertically on small screens */
+        text-align: center;
+    }
+
+    .image img {
+        max-width: 100%;
+        /* Make the image fill its container */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .text-button {
+        /* Your existing button styles */
+    }
+}
+
+
+/* Add this code to your existing CSS */
+
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+    .grid-item {
+        width: 100%;
+        /* Make each item take up full width */
+        margin: 10px 0;
+        /* Adjust margin as needed */
+    }
+
+
+}
+
+/* For tablets and larger screens */
+@media only screen and (min-width: 601px) {
+    .grid-item {
+        width: calc(50% - 20px);
+        /* Make each item take up half of the container with some spacing */
+        margin: 10px;
+        /* Add some margin between items */
+    }
+
+
+}
+
+/* For larger screens (desktop) */
+@media only screen and (min-width: 1025px) {
+    .grid-item {
+        width: calc(33.33% - 20px);
+        /* Make each item take up one-third of the container with some spacing */
+        margin: 10px;
+        /* Add some margin between items */
+    }
+
+
+}
