@@ -23,7 +23,6 @@ a {
 
 
 .color-frontpage {
-    /* background-color: #E22400; */
 
 }
 
@@ -80,8 +79,7 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
-    font-family: 'Open Sans', sans-serif;
-
+    font-family: 'Kavivanar', cursive;
     font-weight: 400;
     font-size: x-large
 }
@@ -110,10 +108,7 @@ a {
 /* nav content */
 #nav-content {
     display: flex;
-    /* justify-content: space-between; */
-    /* flex-direction: row; */
-    /* justify-content: center; */
-    /* background-color: #BA6A42; */
+
 
 }
 
@@ -135,20 +130,19 @@ a {
     display: block;
     width: 13rem;
     height: 100%;
-    /* box-shadow: 15px 10px 10px 0px rgba(0, 0, 0, 0.25); */
 
 }
 
 /* login button */
 .login {
     display: inline-block;
-
+    /* font-family: Inter; */
     margin: 10px 10px;
     width: 100px;
     height: 37px;
     background: #FF9058;
     border-radius: 5px;
-    border: 2px solid #000000;
+    border: none;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
 
 }
@@ -169,7 +163,6 @@ a {
 #empty-box {
 
     width: 10rem;
-    /* background-color: #be3939; */
 }
 
 
@@ -179,15 +172,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh;  */
-    /* Adjust as needed */
+
 }
 
 .image {
     margin-right: 20px;
-    /* Adjust the spacing between the image and button */
-    /* width: 50vw;
-    height: 100%; */
+
 }
 
 .container-frontpage img {
@@ -196,17 +186,16 @@ a {
 }
 
 .text-button {
-    /* padding: 0; */
     width: 10em;
     height: 2.2em;
     flex-direction: column;
     justify-content: center;
     border-radius: 0.3125rem;
-    border: 3px solid #981800;
-    background: #E22400;
+    /* border: 3px solid #981800; */
+    background: #FF9058;
     box-shadow: 15px 10px 10px 3px rgba(0, 0, 0, 0.50);
 
-    color: #FFF;
+    color: #000000;
     text-align: center;
     text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
     font-family: Kavivanar;
@@ -256,7 +245,6 @@ a {
     z-index: -10;
     top: 0;
     right: 0;
-    /* transform: rotate(0deg); */
 }
 
 /* ------food-gallery-------- */
@@ -276,9 +264,7 @@ a {
     font-family: Kavivanar;
     text-align: center;
     width: 25%;
-    /* Adjust the width as needed */
     margin: 60px;
-    /* Adjust the margin as needed */
     box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: rgba(255, 255, 255, 0.9);
 
@@ -286,7 +272,6 @@ a {
 
 .grid-item img {
     max-width: 100%;
-    /* box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.9); */
 }
 
 .difficulty {
@@ -299,6 +284,7 @@ a {
 }
 
 .button {
+    border: none;
     display: inline-block;
     padding: 10px 20px;
     background-color: #FF9058;
@@ -306,15 +292,18 @@ a {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
+    font-family: Inter;
+
+    
+
 }
 
 .button a {
-    color: #FFF;
+    color: #0a0000;
     text-align: center;
     font-family: Inter;
     font-size: 1.25rem;
     font-style: normal;
-    /* font-weight: 400; */
     line-height: normal;
     text-decoration: none;
 
@@ -329,13 +318,11 @@ a {
 /*  Needed for filters */
 
 .hide {
-    /* You can play with the seconds to change the "animation" */
     animation: hide .3s ease 0s 1 normal forwards;
     transform-origin: center;
 }
 
 .show {
-    /* You can play with the seconds to change the "animation" */
     animation: show .3s ease 0s 1 normal forwards;
     transform-origin: center;
 }
@@ -368,14 +355,12 @@ a {
 
 /*  // Needed for filters */
 
-/* For decoration only */
 body {
     font-family: sans-serif;
 }
 
 .projects {
     display: flex;
-    /* background: gray; */
     justify-content: center;
     align-items: center;
     min-height: 200px;
@@ -401,7 +386,6 @@ body {
     cursor: pointer;
 }
 
-/* // For decoration only */
 
 
 
@@ -432,7 +416,6 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    /* font-size: 24px; */
     margin-bottom: 10px;
 }
 
@@ -447,14 +430,12 @@ body {
 
 .container {
     padding: 0 30px;
-    /* Adjust the padding as needed */
 }
 
 /* button for the page */
 .button-container {
     display: flex;
     padding: 0 10em;
-    /* Adjust the padding as needed */
 
 }
 
@@ -485,6 +466,12 @@ body {
     margin: auto;
     text-align: center;
     position: relative;
+    font-family: 'Kavivanar', cursive;
+
+}
+.popup p{
+    font-family: Inter;
+
 }
 
 .close-popup {
@@ -493,6 +480,7 @@ body {
     right: 10px;
     cursor: pointer;
     font-size: 20px;
+    
 }
 
 .option {
@@ -549,22 +537,16 @@ body {
 
 /* cart-items check-out pages */
 .cart-content-holder .button {
-    /* display: flex;
-    flex-wrap: wrap; */
-    /* width: 100%; */
-    /* align-items: center; */
-    /* align-content: center; */
+
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
 
 }
 
 .cart-items {
-    /* flex-direction: row; */
     width: 100%;
     display: flex;
-    /* justify-content: space-evenly; */
     align-items: center;
-
+    font-family: Inter;
 }
 
 .cart-items-left {
@@ -579,7 +561,6 @@ body {
 .cart-items-right {
     display: flex;
     justify-content: space-evenly;
-    /* justify-content: flex-end; */
     margin-right: 8rem;
 
     width: 100%;
@@ -617,13 +598,13 @@ body {
 
 .row {
     box-sizing: border-box;
+    font-family: 'Inter';
 
     font-size: 17px;
     padding: 8px;
     display: flex;
     flex-wrap: wrap;
     flex-wrap: wrap;
-    /* margin: 0 -16px;  */
 }
 
 .col-25 {
@@ -631,15 +612,6 @@ body {
     flex: 25%;
 }
 
-/* .col-50 {
-    -ms-flex: 50%; 
-    flex: 50%;
-  } */
-
-/* .col-75 {
-    -ms-flex: 75%; 
-    flex: 75%;
-  } */
 
 .col-25,
 .col-50,
@@ -706,7 +678,7 @@ label {
 }
 
 .right a {
-    color: #ffffff;
+    color: #000000;
     /* text-decoration: underline; */
 }
 
@@ -714,7 +686,6 @@ label {
 
 span.price {
     float: right;
-    /* color: grey; */
 }
 
 /* (change the direction - make the "cart" column go on top) */
@@ -732,25 +703,27 @@ span.price {
 /* signup pages */
 
 /* sign up page 1 */
+#text-signup{
+    font-family: 'Inter';
 
+}
 .body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter';
     font-size: larger;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
-    /* background-color: #f2f2f2; */
+
 }
 
 .form-container {
+    font-family: 'Inter';
 
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    /* border: 2px solid black; */
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+
     max-width: 40vw;
     width: 100%;
 }
@@ -763,7 +736,6 @@ span.price {
 .form-group input {
     width: calc(100% - 20px);
     padding: 10px;
-    /* border: 1px solid #ccc; */
     border-radius: 0.3em;
     outline: none;
     border: 2px solid black;
@@ -786,7 +758,6 @@ span.price {
 }
 
 .form-group .half-width {
-    /* width: calc(50% - 10px); */
     display: inline-block;
     margin-right: 10px;
 
@@ -807,7 +778,6 @@ span.price {
     margin: 0 auto;
     text-align: center;
     background-color: #f8f8f8;
-    /* Light gray background */
 }
 
 .steps-container p {
@@ -817,7 +787,6 @@ span.price {
     font-size: 5em;
     font-style: normal;
     font-weight: 400;
-    /* line-height: normal; */
 }
 
 .input-group {
@@ -830,7 +799,6 @@ span.price {
     font-weight: bold;
     margin-bottom: 5px;
     color: #555;
-    /* Dark gray text */
 }
 
 .input-group select {
@@ -858,7 +826,6 @@ span.price {
     }
 }
 
-/* popup page when going through sign up */
 /* error */
 .error-container {
     margin: 50px;
@@ -886,31 +853,6 @@ span.price {
     font-weight: bold;
 }
 
-/* -------Footer------- */
-
-body {
-
-}
-
-.content {
-    flex: 1;
-}
-
-.footer {
-    background-color: #f8f8f8;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer img {
-    max-width: 100px; /* Adjust the max width of your logo */
-    height: auto;
-}
-
-.footer a {
-    margin: 0 10px;
-    text-decoration: none;
-}
 
 
 /* food pages */
@@ -949,32 +891,24 @@ body {
     }
     .container-frontpage {
         flex-direction: column;
-        /* Stack items vertically on small screens */
         text-align: center;
     }
 
     .image img {
         max-width: 100%;
-        /* Make the image fill its container */
         height: auto;
-        /* Maintain aspect ratio */
     }
 
-    .text-button {
-        /* Your existing button styles */
-    }
+
 }
 
 
-/* Add this code to your existing CSS */
 
 /* For mobile devices */
 @media only screen and (max-width: 600px) {
     .grid-item {
         width: 100%;
-        /* Make each item take up full width */
         margin: 10px 0;
-        /* Adjust margin as needed */
     }
 
 
@@ -984,9 +918,7 @@ body {
 @media only screen and (min-width: 601px) {
     .grid-item {
         width: calc(50% - 20px);
-        /* Make each item take up half of the container with some spacing */
         margin: 10px;
-        /* Add some margin between items */
     }
 
 
@@ -996,9 +928,7 @@ body {
 @media only screen and (min-width: 1025px) {
     .grid-item {
         width: calc(33.33% - 20px);
-        /* Make each item take up one-third of the container with some spacing */
         margin: 10px;
-        /* Add some margin between items */
     }
 
 
