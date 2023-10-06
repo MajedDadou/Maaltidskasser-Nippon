@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /private/
+Disallow: /secret-page.html
+Disallow: /images/
+
+allow: /index.html
+allow: /måltidskasser.html
+allow: /Måltidskasse-1-vegan.html
+allow: /food-page.html
