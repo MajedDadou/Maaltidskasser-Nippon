@@ -74,18 +74,3 @@ document.addEventListener('DOMContentLoaded', function () {
         totalPriceElement.textContent = '160 DKK'; // Update total price
     });
 });
-
-// document.addEventListener('DOMContentLoaded', function () {
-
-//     document.getElementById('signupForm').addEventListener('submit', function (e) {
-//         e.preventDefault(); // Prevents the default form submission
-
-//         // Show popup message
-//         var popup = confirm('Your form has been submitted successfully!');
-//         if (popup) {
-//             window.location.href = 'index.html'; // Redirect to a new page on OK
-//         }
-//     });
-// });
-
-
